@@ -65,6 +65,22 @@
 
 
 
+//take input from the use and find sum and average
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a ,b, c, sum;
+    float average;
+    cin>>a>>b>>c;
+    sum = a + b + c;
+    average = (float)sum / 3.0;
+    cout<<"Sum: "<<sum<<endl;
+    cout<<"Average: "<<average<<endl;
+    return 0;
+}
+
+
 
 
 
