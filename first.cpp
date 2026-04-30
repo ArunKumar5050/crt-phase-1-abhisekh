@@ -108,12 +108,9 @@ int main(){
     int inputUserId, inputPassword;
     cin>>inputUserId>>inputPassword;
 
-    if(inputUserId == userId && inputPassword == password){
-        cout<<"Login successful"<<endl;
-    }
-    else{
-        cout<<"Invalid credentials"<<endl;
-    }
+    bool isGranted = (inputUserId == userId) && (inputPassword == password);
+    cout << "Access granted: " << isGranted << endl;
+    cout << "Access denied: " << !isGranted << endl;
 
     return 0;
 }
