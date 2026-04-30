@@ -31,14 +31,38 @@
 
 
 
-// logical and relatonal operators
+// // logical and relatonal operators
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int side1, side2, side3;
+//     cin>>side1>>side2>>side3;
+//     bool isEqui = (side1 > 0) && (side1 == side2) && (side2 == side3);
+//     cout<<isEqui<<endl;
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+//swap values of two variables using a 3rd variable
 #include <iostream>
 using namespace std;
 
 int main(){
-    int side1, side2, side3;
-    cin>>side1>>side2>>side3;
-    bool isEqui = (side1 > 0) && (side1 == side2) && (side2 == side3);
-    cout<<isEqui<<endl;
+    int a, b:
+    cin>>a>>b;
+
+    //swapping logic 
+    int temp = a;
+    a = b; 
+    b = temp; 
+    cout<<a<<" "<<b<<endl;
     return 0;
 }
