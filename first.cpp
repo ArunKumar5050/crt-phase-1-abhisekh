@@ -1,3 +1,4 @@
+//problem 1
 //temprature conversion
 // Take input in the form of calcius and convert it into fahrenheit
 // #include <iostream>
@@ -12,6 +13,15 @@
 // }
 
 
+
+
+
+
+
+
+
+
+//problem 2
 // // Global and local variables
 // #include <iostream>
 // using namespace std;
@@ -31,6 +41,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+//problem 3
 // // logical and relatonal operators
 // #include <iostream>
 // using namespace std;
@@ -51,6 +71,12 @@
 
 
 
+
+
+
+
+
+//problem 4
 // //swap values of two variables using a 3rd variable
 // #include <iostream>
 // using namespace std;
@@ -66,6 +92,9 @@
 //     cout<<a<<" "<<b<<endl;
 //     return 0;
 // }
+
+
+
 
 
 
