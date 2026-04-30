@@ -51,18 +51,58 @@
 
 
 
-//swap values of two variables using a 3rd variable
-#include <iostream>
+// //swap values of two variables using a 3rd variable
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int a, b;
+//     cin>>a>>b;
+
+//     //swapping logic 
+//     int temp = a;
+//     a = b; 
+//     b = temp; 
+//     cout<<a<<" "<<b<<endl;
+//     return 0;
+// }
+
+
+
+
+
+
+
+//problem 5
+//area of shapes
+//1 -- circle
+//2 -- rectangle    
+//3 -- triangle
+#include <iostream> 
 using namespace std;
 
 int main(){
-    int a, b;
-    cin>>a>>b;
+    int choice;
+    cin>>choice;
+    if(choice == 1){
+        double radius;
+        cin>>radius;        
+        cout<<3.14 * radius * radius<<endl;
+    }
+    else if(choice == 2){
+        double length, breadth;
+        cin>>length>>breadth;        
+        cout<<length * breadth<<endl;
+    }
+    else if(choice == 3){
+        double base, height;
+        cin>>base>>height;
+        cout<<0.5 * base * height<<endl;
+    }
+    else{
+        cout<<"Invalid choice"<<endl;
+    }
 
-    //swapping logic 
-    int temp = a;
-    a = b; 
-    b = temp; 
-    cout<<a<<" "<<b<<endl;
     return 0;
-}
+
+}    
