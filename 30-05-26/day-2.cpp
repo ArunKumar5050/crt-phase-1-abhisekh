@@ -88,20 +88,20 @@
 // problem 4    
 // find the greater number among 2
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main(){
-    int a, b;
-    int max_number;
-    cin>>a>>b;
+// int main(){
+//     int a, b;
+//     int max_number;
+//     cin>>a>>b;
 
-    //ternary operator
-    max_number = (a > b) ? a : b;
-    cout<<"Greater number is: "<<max_number<<endl;
+//     //ternary operator
+//     max_number = (a > b) ? a : b;
+//     cout<<"Greater number is: "<<max_number<<endl;
 
-    return 0;
-}
+//     return 0;
+// }
  
 
 
@@ -130,21 +130,56 @@ int main(){
 
 //problem 6 -- BREAK STATEMENT
 // we have to add numbers until we get a negative nummber
+// #include <iostream>
+// using namespace std;    
+
+// int main(){
+//     int n;
+//     int sum = 0;
+
+//     while(true){
+//         cin>>n;
+//         if(n<0){
+//             break;
+
+//         }
+//         sum = sum + n;
+//     }
+//     cout<<"Sum: "<<sum<<endl;
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+//problem 7
+//smart home lighting system
+
 #include <iostream>
 using namespace std;    
 
 int main(){
-    int n;
-    int sum = 0;
+    string DayOyNight;
+    bool motionDetected;
 
-    while(true){
-        cin>>n;
-        if(n<0){
-            break;
-
+    cout<< "Is it day or night? ";
+    cin>>DayOyNight;
+    if(DayOyNight == "night"|| DayOyNight == "Night"){
+        cout<<"Is motion detected? (1 for yes, 0 for no) ";
+        cin>>motionDetected;
+        if(motionDetected){
+            cout<<"Turn on the light with 100% brightness"<<endl;
+        }else{
+            cout<<"turn on light with 10% brightness"<<endl;
         }
-        sum = sum + n;
+    }else{
+        cout<<"Turn off the light"<<endl;
     }
-    cout<<"Sum: "<<sum<<endl;
     return 0;
 }
