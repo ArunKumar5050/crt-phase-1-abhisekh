@@ -102,3 +102,25 @@ int main(){
 
     return 0;
 }
+
+
+
+
+
+//problem 5 --CONTINUE STATEMENT
+// print 1 to n and avoid those number which are divisible by 3
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    for(int i = 1; i <= n; i++){
+        if(i % 3 == 0){
+            continue; // skip the current iteration and move to the next iteration
+        }
+        cout<<i<<" ";
+    }
+    return 0;
+}
