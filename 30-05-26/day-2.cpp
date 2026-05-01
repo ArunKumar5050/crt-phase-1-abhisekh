@@ -1,7 +1,7 @@
-//problem 1  if condition
-// to verify user's age wether eligible for vote or not ?
-// #include <iostream>
-// using namespace std;
+// problem 1  if condition
+//  to verify user's age wether eligible for vote or not ?
+//  #include <iostream>
+//  using namespace std;
 
 // int main (){
 //     int age;
@@ -15,16 +15,7 @@
 
 // }
 
-
-
-
-
-
-
-
-
-
-// Problem 2 -- If - else condition 
+// Problem 2 -- If - else condition
 // to verify user's age wether eligible for vote or not ?
 // #include <iostream>
 // using namespace std;
@@ -32,28 +23,21 @@
 // int main() {
 //     int age;
 //     cin >> age;
-//     // if condition 
+//     // if condition
 //     if(age >= 18) {
-//         // logic 
+//         // logic
 //         cout << "Eligible For vote";
 //     } else {
-//         // logic 
+//         // logic
 //         cout << "Not Eligible For vote";
 //     }
 //     return 0;
 // }
 
-
-
-
-
-
-
-
-//program 3
-//to verify user's age wether eligible for vote or not ?
-// #include <iostream>
-// using namespace std;
+// program 3
+// to verify user's age wether eligible for vote or not ?
+//  #include <iostream>
+//  using namespace std;
 
 // int main(){
 //     int age;
@@ -75,17 +59,7 @@
 //     return 0;
 // }
 
-
-
-
-
-
-
-
-
-
-
-// problem 4    
+// problem 4
 // find the greater number among 2
 
 // #include <iostream>
@@ -102,13 +76,9 @@
 
 //     return 0;
 // }
- 
 
-
-
-
-//problem 5 --CONTINUE STATEMENT
-// print 1 to n and avoid those number which are divisible by 3
+// problem 5 --CONTINUE STATEMENT
+//  print 1 to n and avoid those number which are divisible by 3
 
 // #include <iostream>
 // using namespace std;
@@ -125,13 +95,10 @@
 //     return 0;
 // }
 
-
-
-
-//problem 6 -- BREAK STATEMENT
-// we have to add numbers until we get a negative nummber
-// #include <iostream>
-// using namespace std;    
+// problem 6 -- BREAK STATEMENT
+//  we have to add numbers until we get a negative nummber
+//  #include <iostream>
+//  using namespace std;
 
 // int main(){
 //     int n;
@@ -149,6 +116,31 @@
 //     return 0;
 // }
 
+// problem 7
+// smart home lighting system
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     string DayOyNight;
+//     bool motionDetected;
+
+//     cout<< "Is it day or night? ";
+//     cin>>DayOyNight;
+//     if(DayOyNight == "night"|| DayOyNight == "Night"){
+//         cout<<"Is motion detected? (1 for yes, 0 for no) ";
+//         cin>>motionDetected;
+//         if(motionDetected){
+//             cout<<"Turn on the light with 100% brightness"<<endl;
+//         }else{
+//             cout<<"turn on light with 10% brightness"<<endl;
+//         }
+//     }else{
+//         cout<<"Turn off the light"<<endl;
+//     }
+//     return 0;
+// }
 
 
 
@@ -158,28 +150,37 @@
 
 
 
-//problem 7
-//smart home lighting system
+
+
+// problem 8
+// customer support IVR system
+// 1 -- for support
+// 2 -- for billing
+// 3 -- for technical help desk
+// 4 -- for agent
 
 #include <iostream>
-using namespace std;    
-
-int main(){
-    string DayOyNight;
-    bool motionDetected;
-
-    cout<< "Is it day or night? ";
-    cin>>DayOyNight;
-    if(DayOyNight == "night"|| DayOyNight == "Night"){
-        cout<<"Is motion detected? (1 for yes, 0 for no) ";
-        cin>>motionDetected;
-        if(motionDetected){
-            cout<<"Turn on the light with 100% brightness"<<endl;
-        }else{
-            cout<<"turn on light with 10% brightness"<<endl;
-        }
-    }else{
-        cout<<"Turn off the light"<<endl;
+using namespace std;
+int main()
+{
+    int choice;
+    cout << "Enter your choice (1-4): ";
+    cin >> choice;
+    switch (choice)
+    {
+    case 1:
+        cout << "Connecting to support..." << endl;
+        break;
+    case 2:
+        cout << "Connecting to billing..." << endl;
+        break;
+    case 3:
+        cout << "Connecting to technical help desk..." << endl;
+        break;
+    case 4:
+        cout << "connecting call to agent.." << endl;
+        break;
+    default:
+        cout << "Invalid choice. Please try again." << endl;
     }
-    return 0;
 }
