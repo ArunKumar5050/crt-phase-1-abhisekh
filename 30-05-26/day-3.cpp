@@ -135,20 +135,55 @@
 //problem 8
 //print febonacci series
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"Enter the number of terms: ";
+//     cin>>n;
+//     int a=0, b=1, c;
+//     cout<<"Fibonacci series: ";
+//     for(int i=1; i<=n; i++){
+//         cout<<a<<" ";
+//         c = a + b;
+//         a = b;
+//         b = c;
+//     }
+//     return 0;
+// }   
+
+
+
+
+
+
+
+
+
+//problem 9
+
+
 #include<iostream>
 using namespace std;
 
 int main(){
     int n;
-    cout<<"Enter the number of terms: ";
     cin>>n;
-    int a=0, b=1, c;
-    cout<<"Fibonacci series: ";
-    for(int i=1; i<=n; i++){
-        cout<<a<<" ";
-        c = a + b;
-        a = b;
-        b = c;
+    bool isPrime = true;
+    if(n<2){
+        isPrime = false;
+    }else{
+        for(int i=2; i<=n/2; i++){
+            if(n%i==0){
+                isPrime = false;
+                break;
+            }
+       
+        }
+    }if(isPrime){
+        cout<<n<<" is a prime number."<<endl;
+    }else{
+        cout<<n<<" is not a prime number."<<endl;
     }
-    return 0;
-}   
+}
