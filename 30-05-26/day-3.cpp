@@ -164,26 +164,52 @@
 //problem 9
 
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     bool isPrime = true;
+//     if(n<2){
+//         isPrime = false;
+//     }else{
+//         for(int i=2; i<=n/2; i++){
+//             if(n%i==0){
+//                 isPrime = false;
+//                 break;
+//             }
+       
+//         }
+//     }if(isPrime){
+//         cout<<n<<" is a prime number."<<endl;
+//     }else{
+//         cout<<n<<" is not a prime number."<<endl;
+//     }
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+// problem 10
+// smartphone unlock
+// try to unlock the phone until we get the correct password 
+
 #include<iostream>
 using namespace std;
 
 int main(){
-    int n;
-    cin>>n;
-    bool isPrime = true;
-    if(n<2){
-        isPrime = false;
-    }else{
-        for(int i=2; i<=n/2; i++){
-            if(n%i==0){
-                isPrime = false;
-                break;
-            }
-       
-        }
-    }if(isPrime){
-        cout<<n<<" is a prime number."<<endl;
-    }else{
-        cout<<n<<" is not a prime number."<<endl;
+    int password;
+    do{
+        cout<<"Enter the password to unlock the phone: ";
+        cin>>password;
     }
+    while(password!=1234);
+    cout<<"Phone unlocked successfully!"<<endl;
+    return 0;
 }
