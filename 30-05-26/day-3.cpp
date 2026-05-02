@@ -52,16 +52,50 @@
 
 //problem 4
 // print 20 to 1 using while loop
+// #include<iostream>
+// using namespace std;    
 
+// int main(){
+//     int i=20;
+//     while(i>=1){
+//         cout<<i<<" ";
+//         i--;
+//     }
+//     return 0;
+// }
+
+
+
+
+//problem 5
+// print 1 to 10 using do while loop
+
+// #include<iostream>  
+// using namespace std;
+
+// int main(){
+//     int i=1;
+//     do{
+//         cout<<i<<" ";
+//         i++;
+//     }while(i<=10);
+//     return 0;
+// }
+
+
+
+
+//problem 6
+// print 10 to 1 using do while loop
 
 #include<iostream>
-using namespace std;    
+using namespace std;
 
 int main(){
-    int i=20;
-    while(i>=1){
+    int i=10;
+    do{
         cout<<i<<" ";
         i--;
-    }
+    }while(i>=1);
     return 0;
-}
+}   
