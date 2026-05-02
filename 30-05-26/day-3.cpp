@@ -200,16 +200,35 @@
 // smartphone unlock
 // try to unlock the phone until we get the correct password 
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int password;
+//     do{
+//         cout<<"Enter the password to unlock the phone: ";
+//         cin>>password;
+//     }
+//     while(password!=1234);
+//     cout<<"Phone unlocked successfully!"<<endl;
+//     return 0;
+// }
+
+
+// problem 11
+// water jar filler(while)
+
 #include<iostream>
 using namespace std;
 
 int main(){
-    int password;
-    do{
-        cout<<"Enter the password to unlock the phone: ";
-        cin>>password;
+    int currentWater = 0;
+    int add;
+    while(currentWater<500){
+        cout<<"glass has"<<currentWater<<"ml of water."<<endl;
+        cin>>add;;
+        currentWater += add;
     }
-    while(password!=1234);
-    cout<<"Phone unlocked successfully!"<<endl;
+    cout<<"jar is full."<<endl;
     return 0;
 }
