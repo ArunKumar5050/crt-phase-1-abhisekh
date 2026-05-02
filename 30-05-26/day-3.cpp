@@ -88,17 +88,17 @@
 //problem 6
 // print 10 to 1 using do while loop
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    int i=10;
-    do{
-        cout<<i<<" ";
-        i--;
-    }while(i>=1);
-    return 0;
-}   
+// int main(){
+//     int i=10;
+//     do{
+//         cout<<i<<" ";
+//         i--;
+//     }while(i>=1);
+//     return 0;
+// }   
 
 
 
@@ -109,17 +109,46 @@ int main(){
 //problem 7
 //factorial of a number
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"Enter a number: ";
+//     cin>>n;
+//     int fact = 1;
+//     for(int i=1; i<=n; i++){
+//         fact *= i;
+//     }
+//     cout<<"factorial of "<<n<<"is :"<<fact<<endl;
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+//problem 8
+//print febonacci series
+
 #include<iostream>
 using namespace std;
 
 int main(){
     int n;
-    cout<<"Enter a number: ";
+    cout<<"Enter the number of terms: ";
     cin>>n;
-    int fact = 1;
+    int a=0, b=1, c;
+    cout<<"Fibonacci series: ";
     for(int i=1; i<=n; i++){
-        fact *= i;
+        cout<<a<<" ";
+        c = a + b;
+        a = b;
+        b = c;
     }
-    cout<<"factorial of "<<n<<"is :"<<fact<<endl;
     return 0;
-}
+}   
