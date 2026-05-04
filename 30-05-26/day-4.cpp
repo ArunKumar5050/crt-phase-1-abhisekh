@@ -1,0 +1,19 @@
+//problem 1
+//print1 to 10 , 10 number of times
+
+#include<iostream>
+using namespace std;
+int main(){
+    for (int i = 0; i <= 10; i++)
+    {
+        for (int j = 1; j <= 10; j++)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    
+}
+
+
+
