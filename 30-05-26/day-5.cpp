@@ -209,16 +209,40 @@
 
 // problem 9
 // pointers
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int age = 25;
+//     int *ptr = &age;
+//     cout<<age<<endl;
+//     cout<<ptr<<endl;
+//     cout<<*ptr<<endl;
+
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+//program 10
+//addition of two numbers using pointers
 #include <iostream>
 using namespace std;
 
 int main(){
-    int age = 25;
-    int *ptr = &age;
-    cout<<age<<endl;
-    cout<<ptr<<endl;
-    cout<<*ptr<<endl;
+    int a,b;
+    cin>>a>>b;
 
 
+    int *ptrA = &a;
+    int *ptrB = &b;
+    int sum = *ptrA + *ptrB;
+    cout<<"The sum is: "<<sum<<endl;
     return 0;
 }
