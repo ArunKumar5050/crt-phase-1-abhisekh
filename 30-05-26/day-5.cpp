@@ -171,27 +171,54 @@
 // function overloading
 
 
+// #include <iostream>
+// using namespace std;
+
+// int add(int a, int b){
+//     return a+b;
+// }
+// int add(int a, int b, int c){
+//     return a+b+c;
+// }
+// int add(int a, int b, int c, int d){
+//     return a+b+c+d;
+// }
+
+// double add(double a, double b){
+//     return a+b;
+// }
+
+// int main(){
+//     cout<<add(5, 10)<<endl;
+//     cout<<add(3, 2, 5)<<endl;
+//     cout<<add(2,3,4,5)<<endl;
+//     cout<<add(3.5, 2.5)<<endl;
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// problem 9
+// pointers
 #include <iostream>
 using namespace std;
 
-int add(int a, int b){
-    return a+b;
-}
-int add(int a, int b, int c){
-    return a+b+c;
-}
-int add(int a, int b, int c, int d){
-    return a+b+c+d;
-}
-
-double add(double a, double b){
-    return a+b;
-}
-
 int main(){
-    cout<<add(5, 10)<<endl;
-    cout<<add(3, 2, 5)<<endl;
-    cout<<add(2,3,4,5)<<endl;
-    cout<<add(3.5, 2.5)<<endl;
+    int age = 25;
+    int *ptr = &age;
+    cout<<age<<endl;
+    cout<<ptr<<endl;
+    cout<<*ptr<<endl;
+
+
     return 0;
 }
