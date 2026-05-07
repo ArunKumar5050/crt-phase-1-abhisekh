@@ -102,26 +102,49 @@
 // practice --3
 //classes and objrects
 
-#include<iostream>
-using namespace std;
-class student{
-    public:
-    string name;
-    int age;
-    void introduce(){
-        cout<<"hi there, this person name is "<<name<<" and his age is "<< age<<endl;
-    }
+// #include<iostream>
+// using namespace std;
+// class student{
+//     public:
+//     string name;
+//     int age;
+//     void introduce(){
+//         cout<<"hi there, this person name is "<<name<<" and his age is "<< age<<endl;
+//     }
 
+// };
+
+
+// int main(){
+//     student s1, s2;
+//     s1.name = "ajay";
+//     s1.age = 20;
+//     s1.introduce();
+//     s2.name = "vijay";
+//     s2.age = 22;
+//     s2.introduce();
+//     return 0;
+// }
+
+
+
+
+
+//practice --4
+// access modifiers
+
+#include <iostream>
+using namespace std;    
+
+class publicPark{
+public:
+    void enter(){
+        cout<<"anyone can enter in the park"<<endl;
+    }
 };
 
-
 int main(){
-    student s1, s2;
-    s1.name = "ajay";
-    s1.age = 20;
-    s1.introduce();
-    s2.name = "vijay";
-    s2.age = 22;
-    s2.introduce();
+    publicPark p1;
+    p1.enter();
     return 0;
 }
