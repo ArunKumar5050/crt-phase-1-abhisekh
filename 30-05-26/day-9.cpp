@@ -1,0 +1,149 @@
+
+
+#include <iostream>
+using namespace std;
+// Problem -- 1
+// Function Overriding 
+
+// class Appliance{
+// public:    
+//     virtual void turnOn(){
+//         cout <<"Appliance is starting up..." <<"\n";
+//     }
+//     virtual void work() = 0;
+// };
+
+// class Fan : public Appliance{
+// public:
+//     void turnOn() override{
+//         cout <<"Fan blades are moving slowly..." <<"\n";
+//     }
+//     void work() override {
+//         cout <<"Fan is giving me cool air..." <<"\n";
+//     }
+// };
+
+// class Toaster : public Appliance{
+//     void work() override {
+//         cout << "Toaster is heating up the breads..." <<"\n";
+//     }
+// };
+
+// int main() {
+//     Appliance* kitchenApp;
+//     Fan myfan;
+//     kitchenApp = &myfan;
+//     kitchenApp->turnOn();
+//     kitchenApp->work();
+    
+//     Toaster myToast;
+//     kitchenApp = &myToast;
+//     kitchenApp->turnOn();
+//     kitchenApp->work();
+// }
+
+// Problem -- 2
+// Constructor Overloading 
+
+// class Reactangle {
+// public:
+//     int length;
+//     int width;
+    
+//     Reactangle() {
+//         length = 1;
+//         width = 1;
+//     }
+//     Reactangle(int side) {
+//         length = side;
+//         width = side;
+//     }
+//     Reactangle(int side1, int side2){
+//         length = side1;
+//         width = side2;
+//     }
+    
+//     void showArea() {
+//         cout << length * width <<"\n";
+//     }
+// };
+
+// int main() {
+//     Reactangle r1;
+//     Reactangle r2(5);
+//     Reactangle r3(5,4);
+    
+//     r1.showArea();
+//     r2.showArea();
+//     r3.showArea();
+// }
+
+
+// Problem -- 3
+// Introduction to Arrays + Traversal + Memory Layout 
+
+void traversal(int arr[], int size){
+     for(int i = 0; i < size; i++) {
+         cout << arr[i] <<" ";
+     }
+ }
+int main() {
+    int arr[] = {10,20,30,40,50};
+    traversal(arr, 5);
+}
+
+// Problem -- 4
+// Print memeory address of each data
+void Addresstraversal(int arr[], int size){
+     for(int i = 0; i < size; i++) {
+         cout << &arr[i] <<" ";
+     }
+ }
+int main() {
+    int arr[] = {10,20,30,40,50};
+    Addresstraversal(arr, 5);
+}
+
+// Insert an element in an array 
+#include <iostream>
+using namespace std;
+
+void insertElement(int arr[], int &size, int element, int position) {
+
+    for(int i = size; i >= position; i--) {
+        arr[i] = arr[i - 1];
+    }
+
+    arr[position - 1] = element;
+    size++;
+}
+
+int main() {
+
+    int arr[10] = {10, 20, 30, 40, 50};
+    int size = 5;
+
+    int element, position;
+
+    cout << "Enter element to insert: ";
+    cin >> element;
+
+    cout << "Enter position: ";
+    cin >> position;
+
+    insertElement(arr, size, element, position);
+
+    cout << "Array after insertion:\n";
+
+    for(int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+
+/*
+ * ----------------------------------------------
+ * ✅ END OF DAY 09 CODEBASE
+ * ----------------------------------------------
+ */
