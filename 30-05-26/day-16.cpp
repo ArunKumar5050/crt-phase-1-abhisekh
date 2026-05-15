@@ -1,0 +1,95 @@
+Reverse an Array 
+#include <iostream>
+#include <stack>
+using namespace std;
+int main()
+{
+    int arr[] = {10,20,30,40,50};
+    int n = 5;
+    
+    stack<int> st;
+    // Java -- Stack<Integer> st = new Stack<>();
+    // push the data into the stack
+    for(int i = 0; i < n; i++){
+        st.push(arr[i]);
+    }
+    // pop the data from the stack and put into the array back
+    for(int i = 0; i < n; i++) {
+        arr[i] = st.top();
+        st.pop();
+    }
+    
+    cout << "Reversed array.."<<"\n";
+    
+    for(int i = 0; i < n; i++){
+        cout << arr[i] << " "; 
+    }
+    return 0;
+}
+
+Reverse a String 
+leetcode 344
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        stack<char> st;
+
+        for(int i = 0; i < s.size(); i++) {
+            st.push(s[i]);
+        }
+        int i = 0;
+        while(!st.empty()) {
+            s[i++] = st.top();
+            st.pop();
+        }
+    }
+};
+
+Valid paranthesis
+Leetcode 20
+class Solution {
+public:
+    bool isValid(string s) {
+        stack <char> st;
+
+        for(char c : s) {
+            if(c == '(')
+                st.push(')');
+            else if (c == '{')
+                st.push('}');
+            else if (c == '[')
+                st.push(']');   
+            else {
+                if(st.empty() || st.top() != c){
+                    return false;
+                } st.pop();
+            }        
+        }   
+        return st.empty();
+    }
+};
+
+Next Greater Element 
+GFG
+class Solution {
+  public:
+    vector<int> nextLargerElement(vector<int>& arr) {
+        // code here
+        int n = arr.size();
+        stack<int> st;
+        vector<int> nge(n);
+        
+        for(int i = n - 1; i >= 0; i--) {
+            while(!st.empty() && st.top() <= arr[i]) {
+                st.pop();
+            }
+            if(st.empty()){
+                nge[i] = -1;
+            } else {
+                nge[i] = st.top();
+            }
+            st.push(arr[i]);
+        }
+        return nge;
+    }
+};
